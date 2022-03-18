@@ -800,6 +800,61 @@ padding: 103px 0 63px;
 .progress-text{
   padding-left: 20px;
 }
+
+
+/*--TWB-sec--*/
+.txt-with-btn-cta{
+  padding: 79px 0 24px;
+}
+
+.txt-with-btn-cta .container{
+  max-width: 1460px;
+}
+
+.txt-with-btn-cta .my-border {
+border-bottom: 3px solid var(--light-blue);
+display: inline-block;
+width: 60px;
+margin-top: 19px;
+}
+
+.TWB-cta-content p{
+  margin-top: 23px;
+}
+.txt-with-btn-cta{
+  background: var(--main-blue);
+  color: #fff;
+}
+
+.TWB-btns-main {
+  margin: 40px -9px;
+  width: calc(100% - 18px;)
+  
+}
+.TWB-btns-main .btn-blue{
+  text-transform: uppercase;
+  max-width: 289px;
+  width: 100%;
+  height: 60px;
+  margin: 0 9px 10px;
+  font-size: 16px;
+}
+
+
+.TWB-btn2{
+  background-color: #fff;
+  
+}
+
+.TWB-btn2:hover{
+  background-color: var(--main-blue);
+  color: var(--light-blue);
+}
+
+
+.TWB-cta-content{
+  text-align: center;
+}
 /*--Footer--*/
 footer {
   background: var(--my-grey);
@@ -1384,6 +1439,33 @@ footer {
 }
 .progress-content-main{
   margin-top: 20px
+}
+
+/*--t-w-b--*/
+
+.para-lead {
+  font-size: 16px;
+}
+.txt-with-btn-cta {
+  padding: 57px 0 24px;
+}
+
+.TWB-btns-main {
+  margin: 26px 0px;
+}
+
+
+.TWB-btns-main .btn-blue{
+  margin: 0 0 17px;
+
+}
+
+.TWB-btns-main .btn-blue:last-child{
+  margin: 0 9px;
+}
+
+  .TWB-cta-content p {
+  margin-top: 18px;
 }
   /*---footer--*/
   .ftr-left{
