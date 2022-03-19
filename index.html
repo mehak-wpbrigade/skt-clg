@@ -454,10 +454,7 @@
     <section class="slider-last-wrapper">
         <div class="slider-last-sec">
             <div class="slider-img">
-                <img src="images/ftr-slide1.jpg" alt="">
-            </div>
-            <div class="slider-img">
-                <img src="images/ftr-slide1.jpg" alt="">
+                <img src="images/ftr-slide1.png" alt="">
             </div>
             <div class="slider-img">
                 <img src="images/ftr-slide2.jpg" alt="">
@@ -472,11 +469,20 @@
                 <img src="images/ftr-slide5.jpg" alt="">
             </div>
             <div class="slider-img">
-                <img src="images/ftr-slide6.jpg" alt="">
+                <img src="images/ftr-slide6.png" alt="">
+            </div>
+            <!-- <div class="slider-img">
+                <img src="images/ftr-slide1.png" alt="">
+            </div> -->
+            <div class="slider-img">
+                <img src="images/ftr-slide2.jpg" alt="">
+            </div>
+            <!-- <div class="slider-img">
+                <img src="images/ftr-slide3.jpg" alt="">
             </div>
             <div class="slider-img">
-                <img src="images/ftr-slide6.jpg" alt="">
-            </div>
+                <img src="images/ftr-slide4.jpg" alt="">
+            </div> -->
         </div>
     </section>
 
@@ -602,11 +608,100 @@
             </div>
         </div>
     </section>
-  
+  <section class="degree-sec-wrapper">
+      <div class="container">
+          <div class="degree-sec">
+            <div class="degree-con-box">
+              <div class="course-wrapper">
+                  <div class="course-info">
+                      <div class="course-info-icon">
+                          <img src="images/p-icon1.png" alt="">
+                      </div>
+                      <div class="course-info-head">Total Program Cost:</div>
+                  </div>
+                  <div class="course-des">$23,914</div>
+              </div>
+              <div class="course-wrapper">
+                <div class="course-info">
+                    <div class="course-info-icon">
+                        <img src="images/p-icon2.png" alt="">
+                    </div>
+                    <div class="course-info-head">Next Start Date:</div>
+                </div>
+                <div class="course-des">October 1, 2021</div>
+            </div>
+            <div class="course-wrapper">
+                <div class="course-info">
+                    <div class="course-info-icon">
+                        <img src="images/p-icon3.png" alt="">
+                    </div>
+                    <div class="course-info-head">Completion Time:</div>
+                </div>
+                <div class="course-des">36 Months</div>
+            </div>
+            <div class="course-wrapper">
+                <div class="course-info">
+                    <div class="course-info-icon">
+                        <img src="images/p-icon4.png" alt="">
+                    </div>
+                    <div class="course-info-head">AVG. SALARY PREMIUM:</div>
+                </div>
+                <div class="course-des">$12,000</div>
+            </div>
+            <div class="course-wrapper">
+                <div class="course-info">
+                    <div class="course-info-icon">
+                        <img src="images/p-icon5.png" alt="">
+                    </div>
+                    <div class="course-info-head">Semester Credits:</div>
+                </div>
+                <div class="course-des">64</div>
+            </div>
+            </div>
+              <div class="degree-con-box"></div>
+              <div class="degree-con-box"></div>
+          </div>
+      </div>
+  </section>
     <!---JS---->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script type="text/javascript">
+         /*---slide---*/
+    $(".slider-last-sec").slick({
+      dots: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 6,
+      slidesToScroll: 1,
+      prevArrow: ".priv_arrow",
+      nextArrow: ".next_arrow",
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false,
+          },
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+    });
         // --accordian--
         var accItem = document.getElementsByClassName("accordian");
         var accHD = document.getElementsByClassName("accordian-head");
