@@ -202,3 +202,9 @@
     opacity: .75;
     color: black;
 }
+
+.x-tabs-panels>.x-tabs-panel:not(.x-active) {
+    height: 0 !important;
+    overflow: hidden;    
+    display: block;
+}
