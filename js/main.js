@@ -16,6 +16,26 @@ function openPopupp() {
 function closePopupp() {
     popupp.classList.remove("open-popupp");
 }
+
+// form popup
+let popupf = document.getElementById("popupf");
+
+function openPopupf() {
+    popupf.classList.add("open-popupf");
+}
+function closePopupf() {
+    popupf.classList.remove("open-popupf");
+}
+
+// thanku popup
+let popupt = document.getElementById("popupt");
+
+function openPopupt() {
+    popupt.classList.add("open-popupt");
+}
+function closePopupt() {
+    popupt.classList.remove("open-popupt");
+}
 /*--slider1--*/
 $(".tabs-slider").slick({
     dots: true,

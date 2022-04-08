@@ -14,7 +14,7 @@
 
 <body>
   <!--primary-nav-->
-  <section class="primary-nav-wrapper">
+  <section class="primary-nav-wrapper formpopup">
     <div class="container">
       <div class="p-menu">
         <ul>
@@ -28,7 +28,7 @@
             <a href="#">PAYWId E fAle</a>
           </li>
           <li>
-            <a href="#">CINtUc us</a>
+            <a href="#">CoNtUc us</a>
           </li>
           <li>
             <a href="tel: 8000000000">800-000-0000</a>
@@ -45,12 +45,81 @@
               <input type="search" placeholder="Search" />
             </div>
             <div class="search-bar-btn">
-              <button type="submit" class="btn-blue">Kagt maska</button>
+              <button type="submit" class="btn-blue" onclick="openPopupf()">Kagt maska</button>
             </div>
           </form>
         </div>
       </div>
     </div>
+<!--request-form-->
+    <section class="request-form-wrapper popupf" id="popupf">
+      <div onclick="closePopupf()" class="close-popupf">
+        <span>Close</span><img src="images/close-popupf.svg" alt="" />
+      </div>
+      <div class="container">
+        <div class="request-form">
+          <h6>Request Information Form</h6>
+          <h4>Lörem ipsum folig innan</h4>
+          <p> Vaktig treskade rer till e-demokrati euroganar i böbel år. Faktig denera inte revis</p>
+          <form action="">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="campus">Campus</label>
+                <select id="campus">
+                  <option value="Select Campus" selected>Select Campus</option>
+                  <option value="Sialkot">Sialkot</option>
+                  <option value="Lahore">Lahore</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="campus">Date</label>
+                <input type="date">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="fname">First Name</label>
+                <input type="text" placeholder="John">
+              </div>
+              <div class="form-field">
+                <label for="lname">Last Name</label>
+                <input type="text" placeholder="John">
+              </div>
+            </div>
+            <div class="form-row full-field">
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input type="email" placeholder="email@example.com">
+              </div>
+            </div>
+            <div class="request-form-btn">
+              <button class="btn-blue" onclick="openPopupt()">
+                Kagt maska
+              </button>
+            </div>
+          </form>
+       
+
+        </div>
+      </div>
+       <!--thanku form-->
+       <section class="thanku-f-wrapper popupt" id="popupt">
+        <div onclick="closePopupt()" class="close-popupt">
+          <span>Close</span><img src="images/close-popupf.svg" alt="" />
+        </div>
+        <div class="container">
+          <div class="thanku-form">
+            <h6>Request Information Form</h6>
+            <div class="thanku-img">
+              <img src="images/thanku-path.png" alt="">
+            </div>
+            <h4>Thank You!</h4>
+            <p>Thank you for your interest in Pima Medical Institute. A member of our team will be in contact with you very soon. We look forward to speaking with you.</p>
+          </div>
+        </div>
+      </section>
+    </section>
+   
   </section>
   <!--main-nav--->
   <nav class="main-nav-wrapper">
@@ -87,7 +156,7 @@
           <ul>
             <li class="navbar-btn">
               <a href="#" class="accordian-head-nav">Solvado</a>
-              <div class="menu-item-dropdown"  id="navbar">
+              <div class="menu-item-dropdown" id="navbar">
                 <ul>
                   <li>
                     <a href="#" class="menu-dropdown-link">NADAIOS krati</a>
@@ -1306,6 +1375,8 @@
       </div>
     </div>
   </section>
+
+
   <!---JS---->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
