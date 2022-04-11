@@ -17,26 +17,8 @@ function closePopupp() {
     popupp.classList.remove("open-popupp");
 }
 
-// form popup
-let popupf = document.getElementById("popupf");
 
-function openPopupf() {
-    popupf.classList.add("open-popupf");
-}
-function closePopupf() {
-    popupf.classList.remove("open-popupf");
-}
-
-// thanku popup
-let popupt = document.getElementById("popupt");
-
-function openPopupt() {
-    popupt.classList.add("open-popupt");
-}
-function closePopupt() {
-    popupt.classList.remove("open-popupt");
-}
-/*--slider1--*/
+// /--tabsslider
 $(".tabs-slider").slick({
     dots: true,
     infinite: true,
@@ -71,7 +53,225 @@ $(".tabs-slider").slick({
         },
     ],
 });
-/*---slider2---*/
+
+
+// /--tabsslider
+$(".tabs-slider2").slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 2,
+    prevArrow: ".privv_arrow",
+    nextArrow: ".nextt2_arrow",
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 2,
+                infinite: true,
+                dots: true,
+            },
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+            },
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            },
+        },
+    ],
+});
+
+
+// /--tabsslider
+$(".tabs-slider3").slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 2,
+    prevArrow: ".privv_arrow",
+    nextArrow: ".nextt3_arrow",
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 2,
+                infinite: true,
+                dots: true,
+            },
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+            },
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            },
+        },
+    ],
+});
+
+// /--tabsslider
+$(".tabs-slider4").slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 2,
+    prevArrow: ".privv_arrow",
+    nextArrow: ".nextt4_arrow",
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 2,
+                infinite: true,
+                dots: true,
+            },
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+            },
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            },
+        },
+    ],
+});
+
+// /--tabsslider
+$(".tabs-slider5").slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 2,
+    prevArrow: ".privv_arrow",
+    nextArrow: ".nextt5_arrow",
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 2,
+                infinite: true,
+                dots: true,
+            },
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+            },
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            },
+        },
+    ],
+});
+
+// /--tabsslider
+$(".tabs-slider6").slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 2,
+    prevArrow: ".privv_arrow",
+    nextArrow: ".nextt6_arrow",
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 2,
+                infinite: true,
+                dots: true,
+            },
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+            },
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            },
+        },
+    ],
+});
+
+
+
+/*--tab items slider--*/
+$(".tabs-nav").slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    prevArrow: ".privv_arrow",
+    nextArrow: ".nexttab_arrow",
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 2,
+            },
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 2,
+            },
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+            },
+        },
+    ],
+});
+/*---sliderlast---*/
 $(".slider-last-sec").slick({
     dots: false,
     infinite: true,
@@ -131,6 +331,24 @@ function toggleItem() {
         this.parentNode.className = "accordian open";
     }
 }
+
+
+$('.toggle').click(function(e) {
+    e.preventDefault();
+
+  let $this = $(this);
+
+  if ($this.next().hasClass('show')) {
+      $this.next().removeClass('show');
+      $this.next().slideUp(350);
+  } else {
+      $this.parent().parent().find('.accordian-para ').removeClass('show');
+      $this.parent().parent().find('.accordian-para').slideUp(350);
+      $this.next().toggleClass('show');
+      $this.next().slideToggle(350);
+  }
+});
+
 // nav-toggle--
 function openNav() {
     document.getElementById("menu").style.width = "100%";
@@ -163,19 +381,23 @@ document.getElementById('search-iconn').onclick = function toggleTextt() {
     }
 }
 
-function openTab(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-  }
+
+// tabs 
+// function openTab(evt, cityName) {
+//     var i, tabcontent, tablinks;
+//     tabcontent = document.getElementsByClassName("tabcontent");
+//     for (i = 0; i < tabcontent.length; i++) {
+//       tabcontent[i].style.display = "none";
+//     }
+
+//     tablinks = document.getElementsByClassName("tablinks");
+//     for (i = 0; i < tablinks.length; i++) {
+//       tablinks[i].className = tablinks[i].className.replace(" active", "");
+//     }
+
+//     document.getElementById(cityName).style.display = "block";
+//     evt.currentTarget.className += " active";
+//   }
 
   // Show the first tab and hide the rest
   
@@ -194,6 +416,28 @@ $('#tabs-nav li').click(function(){
   return false;
 });
 
+
+// ---nav-accordian
 $('.accordian-head-nav').click(function() {
     $('#navbar').toggle();
 });
+
+
+// /form and thanks popup
+$('.open-popupf').click(function(){
+    $('html').addClass('active');
+    $('.popupf').addClass('active');
+})
+
+$('.close-popupf').click(function(){
+    $('html').removeClass('active');
+    $('.popupf').removeClass('active');
+})
+
+$('.open-popupt').click(function(){
+    $('.popupt').addClass('active');
+})
+
+$('.close-popupt').click(function(){
+    $('.popupf , .popupt').removeClass('active');
+})

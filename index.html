@@ -12,9 +12,79 @@
   <link rel="stylesheet" type="text/css" href="css/slick.css" />
 </head>
 
-<body>
+<body><!--request-form-->
+  <section class="request-form-wrapper popupf">
+    <div class="close-popupf">
+      <span>Close</span><img src="images/close-popupf.svg" alt="" />
+    </div>
+    <div class="container">
+      <div class="request-form">
+        <h6>Request Information Form</h6>
+        <h4>Lörem ipsum folig innan</h4>
+        <p> Vaktig treskade rer till e-demokrati euroganar i böbel år. Faktig denera inte revis</p>
+        <form action="">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="campus">Campus</label>
+              <select id="campus">
+                <option value="Select Campus" selected>Select Campus</option>
+                <option value="Sialkot">Sialkot</option>
+                <option value="Lahore">Lahore</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="campus">Date</label>
+              <input type="date" id="campus">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="fname">First Name</label>
+              <input type="text" placeholder="John" id="fname">
+            </div>
+            <div class="form-field">
+              <label for="lname">Last Name</label>
+              <input type="text" placeholder="John" id="lname">
+            </div>
+          </div>
+          <div class="form-row full-field">
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" placeholder="email@example.com" id="email">
+            </div>
+          </div>
+          <div class="request-form-btn">
+            <button class="btn-blue open-popupt">
+              Kagt maska
+            </button>
+          </div>
+        </form>
+     
+
+      </div>
+    </div>
+     <!--thanku form-->
+  </section>
+  
+  <section class="thanku-f-wrapper popupt">
+    <div class="close-popupt">
+      <span>Close</span><img src="images/close-popupf.svg" alt="" />
+    </div>
+    <div class="container">
+      <div class="thanku-form">
+        <h6>Request Information Form</h6>
+        <div class="thanku-img">
+          <img src="images/thanku-path.png" alt="">
+        </div>
+        <h4>Thank You!</h4>
+        <p>Thank you for your interest in Pima Medical Institute. A member of our team will be in contact with you very soon. We look forward to speaking with you.</p>
+      </div>
+    </div>
+  </section>
+
+
   <!--primary-nav-->
-  <section class="primary-nav-wrapper formpopup">
+  <section class="primary-nav-wrapper">
     <div class="container">
       <div class="p-menu">
         <ul>
@@ -45,80 +115,13 @@
               <input type="search" placeholder="Search" />
             </div>
             <div class="search-bar-btn">
-              <button type="submit" class="btn-blue" onclick="openPopupf()">Kagt maska</button>
+              <button type="submit" class="btn-blue openbox">Kagt maska</button>
             </div>
           </form>
         </div>
       </div>
     </div>
-<!--request-form-->
-    <section class="request-form-wrapper popupf" id="popupf">
-      <div onclick="closePopupf()" class="close-popupf">
-        <span>Close</span><img src="images/close-popupf.svg" alt="" />
-      </div>
-      <div class="container">
-        <div class="request-form">
-          <h6>Request Information Form</h6>
-          <h4>Lörem ipsum folig innan</h4>
-          <p> Vaktig treskade rer till e-demokrati euroganar i böbel år. Faktig denera inte revis</p>
-          <form action="">
-            <div class="form-row">
-              <div class="form-field">
-                <label for="campus">Campus</label>
-                <select id="campus">
-                  <option value="Select Campus" selected>Select Campus</option>
-                  <option value="Sialkot">Sialkot</option>
-                  <option value="Lahore">Lahore</option>
-                </select>
-              </div>
-              <div class="form-field">
-                <label for="campus">Date</label>
-                <input type="date">
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-field">
-                <label for="fname">First Name</label>
-                <input type="text" placeholder="John">
-              </div>
-              <div class="form-field">
-                <label for="lname">Last Name</label>
-                <input type="text" placeholder="John">
-              </div>
-            </div>
-            <div class="form-row full-field">
-              <div class="form-field">
-                <label for="email">Email</label>
-                <input type="email" placeholder="email@example.com">
-              </div>
-            </div>
-            <div class="request-form-btn">
-              <button class="btn-blue" onclick="openPopupt()">
-                Kagt maska
-              </button>
-            </div>
-          </form>
-       
 
-        </div>
-      </div>
-       <!--thanku form-->
-       <section class="thanku-f-wrapper popupt" id="popupt">
-        <div onclick="closePopupt()" class="close-popupt">
-          <span>Close</span><img src="images/close-popupf.svg" alt="" />
-        </div>
-        <div class="container">
-          <div class="thanku-form">
-            <h6>Request Information Form</h6>
-            <div class="thanku-img">
-              <img src="images/thanku-path.png" alt="">
-            </div>
-            <h4>Thank You!</h4>
-            <p>Thank you for your interest in Pima Medical Institute. A member of our team will be in contact with you very soon. We look forward to speaking with you.</p>
-          </div>
-        </div>
-      </section>
-    </section>
    
   </section>
   <!--main-nav--->
@@ -308,7 +311,7 @@
           </div>
           <!---search-->
           <div class="MN-btn">
-            <button class="btn-blue">Kagt maska</button>
+            <button class="btn-blue open-popupf" >Kagt maska</button>
           </div>
         </div>
       </div>
@@ -377,15 +380,16 @@
       <div class="tabs-section">
         <h5 class="h5">Lörem ipsum dumpling böhet</h5>
         <div class="tabs-nav-main">
-          <ul id="tabs-nav">
+          <ul id="tabs-nav" class="tabs-nav">
             <li><a href="#tab1">lOREM IPSUM</a></li>
             <li><a href="#tab2">NADAIOS</a></li>
             <li><a href="#tab3">Gåmiktig</a></li>
             <li><a href="#tab4">Gigagen</a></li>
             <li><a href="#tab5">Hexara</a></li>
             <li><a href="#tab6">Nanett</a></li>
+            <li><a href="#tab6">lorem</a></li>
           </ul>
-          <div class="tab-arrow">
+          <div class="tab-arrow nexttab_arrow">
             <img src="images/event-arrow.png" alt="" />
           </div>
         </div>
@@ -455,7 +459,7 @@
           </div>
           <!--tabtwo-->
           <div class="tabs-slider-wrapper tab-content" id="tab2">
-            <div class="tabs-slider">
+            <div class="tabs-slider2">
               <div class="tab-slider-con-wrapper">
                 <div class="tab-slider-con">
                   <img src="images/event1.jpg" alt="" />
@@ -514,12 +518,12 @@
                 </div>
               </div>
             </div>
-            <span class="nextt_arrow"><img src="images/event-arrow.png" alt="" /></span>
+            <span class="nextt2_arrow"><img src="images/event-arrow.png" alt="" /></span>
           </div>
 
           <!--tabthree-->
           <div class="tabs-slider-wrapper tab-content" id="tab3">
-            <div class="tabs-slider">
+            <div class="tabs-slider3">
               <div class="tab-slider-con-wrapper">
                 <div class="tab-slider-con">
                   <img src="images/event1.jpg" alt="" />
@@ -578,12 +582,12 @@
                 </div>
               </div>
             </div>
-            <span class="nextt_arrow"><img src="images/event-arrow.png" alt="" /></span>
+            <span class="nextt3_arrow"><img src="images/event-arrow.png" alt="" /></span>
           </div>
 
           <!--tab4-->
           <div class="tabs-slider-wrapper tab-content" id="tab4">
-            <div class="tabs-slider">
+            <div class="tabs-slider4">
               <div class="tab-slider-con-wrapper">
                 <div class="tab-slider-con">
                   <img src="images/event1.jpg" alt="" />
@@ -642,12 +646,12 @@
                 </div>
               </div>
             </div>
-            <span class="nextt_arrow"><img src="images/event-arrow.png" alt="" /></span>
+            <span class="nextt4_arrow"><img src="images/event-arrow.png" alt="" /></span>
           </div>
 
           <!--tab5-->
           <div class="tabs-slider-wrapper tab-content" id="tab5">
-            <div class="tabs-slider">
+            <div class="tabs-slider5">
               <div class="tab-slider-con-wrapper">
                 <div class="tab-slider-con">
                   <img src="images/event1.jpg" alt="" />
@@ -706,12 +710,12 @@
                 </div>
               </div>
             </div>
-            <span class="nextt_arrow"><img src="images/event-arrow.png" alt="" /></span>
+            <span class="nextt5_arrow"><img src="images/event-arrow.png" alt="" /></span>
           </div>
 
           <!--tab6-->
           <div class="tabs-slider-wrapper tab-content" id="tab6">
-            <div class="tabs-slider">
+            <div class="tabs-slider6">
               <div class="tab-slider-con-wrapper">
                 <div class="tab-slider-con">
                   <img src="images/event1.jpg" alt="" />
@@ -770,7 +774,7 @@
                 </div>
               </div>
             </div>
-            <span class="nextt_arrow"><img src="images/event-arrow.png" alt="" /></span>
+            <span class="nextt_arrow6"><img src="images/event-arrow.png" alt="" /></span>
           </div>
 
         </div>
@@ -1016,7 +1020,7 @@
         <div class="FAQ-left">
           <div class="accordian-wrapper">
             <div class="accordian open">
-              <div class="accordian-head">
+              <div class="accordian-head toggle">
                 <h6 class="h6-small">Porttitor rhoncus dolor purus non</h6>
                 <div class="arrow-img"></div>
               </div>
@@ -1032,7 +1036,7 @@
             </div>
 
             <div class="accordian close">
-              <div class="accordian-head">
+              <div class="accordian-head toggle">
                 <h6 class="h6-small">Elementum facilisis</h6>
                 <div class="arrow-img"></div>
               </div>
@@ -1048,7 +1052,7 @@
             </div>
 
             <div class="accordian close">
-              <div class="accordian-head">
+              <div class="accordian-head toggle">
                 <h6 class="h6-small">Neque convallis a cras semper</h6>
                 <div class="arrow-img"></div>
               </div>
@@ -1064,7 +1068,7 @@
             </div>
 
             <div class="accordian close">
-              <div class="accordian-head">
+              <div class="accordian-head toggle">
                 <h6 class="h6-small">Facilisis gravida neque convallis</h6>
                 <div class="arrow-img"></div>
               </div>
@@ -1083,7 +1087,7 @@
         <div class="FAQ-right">
           <div class="accordian-wrapper">
             <div class="accordian open">
-              <div class="accordian-head">
+              <div class="accordian-head toggle">
                 <h6 class="h6-small">Porttitor rhoncus dolor purus non</h6>
                 <div class="arrow-img"></div>
               </div>
@@ -1098,7 +1102,7 @@
               </div>
             </div>
             <div class="accordian close">
-              <div class="accordian-head">
+              <div class="accordian-head toggle">
                 <h6 class="h6-small">Elementum facilisis</h6>
                 <div class="arrow-img"></div>
               </div>
@@ -1113,7 +1117,7 @@
               </div>
             </div>
             <div class="accordian close">
-              <div class="accordian-head">
+              <div class="accordian-head toggle">
                 <h6 class="h6-small">Neque convallis a cras semper</h6>
                 <div class="arrow-img"></div>
               </div>
@@ -1129,7 +1133,7 @@
             </div>
 
             <div class="accordian close">
-              <div class="accordian-head">
+              <div class="accordian-head toggle">
                 <h6 class="h6-small">Facilisis gravida neque convallis</h6>
                 <div class="arrow-img"></div>
               </div>
